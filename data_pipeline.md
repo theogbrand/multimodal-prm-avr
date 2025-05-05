@@ -10,7 +10,7 @@ The point of Monte Carlo is we want to systematically sample a tree of solutions
 
 There are two variants of Monte Carlo Sampling:
 
-1. "Vanilla MCTS": e.g. we sample 4 solutions for each image-question pair and split each of them into at most 12 steps. For each step, we sample 16 continuations and compute mci according to these continuations where mci = num(correct completions)/num(sampled completions).Annotate correctness of every step. (Linear, per-step annotation process)
+1. "Vanilla MCTS (Math-Shepherd, MiPS): e.g. we sample 4 solutions for each image-question pair and split each of them into at most 12 steps. For each step, we sample 16 continuations and compute mci according to these continuations where mci = num(correct completions)/num(sampled completions).Annotate correctness of every step. (Linear, per-step annotation process)
 
 2. Algorithmic MCTS: e.g. OmegaPRM which "algorithmically" generates rollouts using MCTS + binary search to efficiently exploring the space of possible paths using MCTS, focusing search on finding errors and building a representative tree from which training data is extracted. Basically prunes the search tree of solutions for more "high signal" data to train PRM on.
 

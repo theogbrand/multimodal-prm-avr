@@ -1,9 +1,9 @@
 # Visual Step By Step (VSBS)
 related works: OmegaPRM, Math-Shepherd, MiPS, LLM-TS, VisualPRM, AgentPRM, GenPRM
 
-Use OmegaPRM recipe for automated visual step by step reasoning generation. VisualPRM has reference implementation of doing this. 
+Use Vanilla MCTS recipe for automated visual step by step reasoning generation. VisualPRM has reference implementation of doing this. 
 
-Explore AgentPRM for anti-label visual tuning, "direct" learning of step by step labels.
+Explore AgentPRM for label-free visual tuning, "direct" learning of step by step labels.
 
 # Background
 Our objective is to apply the AlphaZero method to LLMs, which requires modifications due to certain properties - LLMs have large finite states, while games have finite states. 
